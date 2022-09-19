@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" charset="utf-8" src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Sistema de Estacionamento</title>
+</head>
+<body >
+    
+    <div id="corpoHome">
+            <h1>Banco MuBank</h1>
+        <div>
+          <input class="botoes" type="button" id="cadastrarBtn" value="Cadastrar Conta" >
+        </div>
+        <div>
+            <input class="botoes" type="button" id="TransferenciasBtn" value="Transferencias">
+        </div>
+        <div>
+            <input class="botoes" type="button" id="SaqueDepositoBtn" value="Saque/Deposito">
+
+        </div>
+        <div>
+            <input class="botoes" type="button" id="ExtratosBtn" value="Extratos">
+
+        </div>
+        <div>
+            <input class="botoes" type="button" id="resetarBtn" value="Passar Mes">
+
+        </div>
+
+    </div>
+    
+    <div id="corpoCad">
+        <h1>Banco MuBank</h1>
+    <div>
+        <p>Nome</p>
+        <input type="text" name="" id="inputNome">
+        <p>CPF</p>
+        <input type="text" name="" id="inputCPF">
+        <p>Tipo de conta </p>
+        <select id="TipoConta" name="Conta">
+            <option value="ContaBasica">Conta Basica</option>
+            <option value="ContaEstudante">Conta Estudante</option>
+            <option value="ContaPlatinum">Platinum</option>
+        </select>
+    </div>
+    
+    <div style="margin-top: 20px;">
+        <input type="button" class="botoes"id="voltarBtnCad" value="Voltar">
+        <input type="button" class="botoes" id="criarBtnCad" value="Enviar">
+    </div>
+
+</div>
+
+
+<div id="corpoTransferencias">
+    <h1>Banco MuBank</h1>
+
+    <div>
+        <p>Conta de origem</p>
+        <input type="text" id="contaOrigem">
+
+    </div>
+    <div>
+        <p>Conta de destino</p>
+        <input type="text" id="contaDestino">
+    </div>
+    <div>
+        <p>Valor de transferencia</p>
+        <input type="text" id="valorTransferido">
+    </div>
+    <div>
+        <input type="button"class="botoes" id="voltarBtnTrans" value="Voltar">
+        <input type="button"class="botoes" id="EnviarBtnTrans" value="Transferir">
+
+    </div>
+    
+    
+
+
+
+</div>
+
+<div id="corpoExtrato">
+    <h1>Banco MuBank</h1>
+    <div>
+        <div>
+            <input type="text" id="procuraExtrato" style="height: 45px; width: 200px;border-radius: 15px;">
+            <input type="button" id="procurarBtn"  class="botoes" value="Buscar">
+        </div>
+        
+        <div id="listaExtrato">
+        </div>
+        <div>
+            <input type="button" class="botoes" id="voltarBtnRel" value="Voltar">
+        </div>
+        
+    </div>
+
+</div>
+<div id="corpoSaqueDeposito">
+    <h1>Banco MuBank</h1>
+        
+        <div>
+            <p>Conta</p>
+            <input type="text" id="dsConta">
+        </div>
+        <div>
+            <p>Valor</p>
+            <input type="text" id="dsValor">
+        </div>
+        <div>
+            <p>Tipo de operacao</p>
+            <select id="TipoOP" name="Conta">
+                <option value="Deposito">Deposito</option>
+                <option value="Saque">Saque</option>
+            </select>
+
+        </div>
+        <div>
+            <input type="button" class="botoes" id="voltarBtnDS" value="Voltar">
+            <input type="button" class="botoes" id="efetuarBtnDS" value="Enviar">
+
+        </div>
+        
+
+</div>
+
+    
+</body>
+</html>
